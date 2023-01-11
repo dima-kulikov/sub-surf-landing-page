@@ -27,6 +27,11 @@ h6,
 p {
     margin: 0;
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .container {
     max-width: 1230px;
@@ -172,7 +177,6 @@ p {
     background-size: cover;
     background-position: center;
     position: relative;
-    /* margin-top: 140px; */
 }
 .info::before{
     content: "";
@@ -188,9 +192,115 @@ p {
 .info__top{
     display: flex;
     gap: 80px;
+    padding-top: 100px;
+    margin-bottom: 65vh;
 }
 .info__top-text{
     padding-top: 245px;
     width: 290px;
     color: #fff;
+    position: relative;
+}
+.info__top-text--one{
+    padding-bottom: 125px;
+}
+.info__top-text--two{
+    border-bottom: 1px solid #fff;
+}
+.info__top-img{
+    position: relative;
+    z-index: 6;
+}
+.popup-btn{
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+.popup-btn span{
+    padding-top: 12px;
+    display: block;
+    color: #fff;
+}
+.info__btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* next block info__specs */
+.info__specs{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.info__specs-title{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 67px;
+    width: 250px;
+}
+.info__specs-list{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0;
+    width: 565px;
+    font-weight: 700;
+}
+.info__specs-item{
+    margin-bottom: 15px;
+    display: flex;
+    gap: 25px;
+}
+.info__specs-caption{
+    width: 185px;
+}
+/* next block -- buy */
+.buy{
+    padding: 150px 0;
+}
+.buy__inner{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.buy__content{
+    width: 510px;
+}
+.buy__title{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 67px;
+    color: #0093A1;
+}
+.buy__list{
+    margin-bottom: 25px;
+}
+.buy__item{
+    margin-bottom: 25px;
+    width: 285px;
+}
+.buy__item:hover .buy__item-title{
+    color: #0093A1;
+}
+.buy__item-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: color .3s;
+}
+
+.buy__price{
+
+}
+.buy__btn{
+
+}
+.buy__img{
+
 }
